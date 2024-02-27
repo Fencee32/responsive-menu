@@ -1,2 +1,2 @@
-git config user.name KG
-git config user.email KG
+git config user.name BIB
+git config user.email batho.istvan.bence@diak.remenyikzs.hu
