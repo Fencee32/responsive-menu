@@ -87,3 +87,13 @@ nav a:hover {
 body:has(#menuCheckBox:checked) {
   --bottom-menu-bottom: 10px;
 }
+
+#BigImageDiv {
+  width: 400px;
+  height: 400px;
+  border: 1px solid black;
+}
+
+#BigImageDiv img {
+  width: 100%;
+}

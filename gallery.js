@@ -13,10 +13,17 @@ for (let i = 0; i < Valami.length; i++) {
 }
 
 const kepek = ["delfin.png", "kutya.webp", "macska.jpg"]
+const container = document.querySelector("#container")
+const targetImage = document.querySelector("#targetImage")
 
 for (const kep of kepek) {
-  let img = document.createElement("img")
+  const img = document.createElement("img")
   img.src = "img/" + kep
-  img.width = "200"
-  document.body.appendChild(img)
+  img.width = 200
+  console.log("kép:", img.src)
+  container.appendChild(img)
+  img.addEventListener("click", function () {
+    console.log(this.src)
+    targetImage.src = this.src
+  })
 }
